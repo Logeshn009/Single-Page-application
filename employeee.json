@@ -1,0 +1,21 @@
+{"employees":[
+    {"full_name":"rakeshpv","gender":"male","email":"rakesha@imkan.com","phone":"+91 8618897671","age":"22","designation":"secretary","salary":"42247","dob":"16/12/1999"},
+
+    {"full_name":"alice","gender":"male","email":"alice@imkan.com","phone":"+91 8618897671","age":"28","designation":"Course_Manager","salary":"30000","dob":"29/12/2001"},
+
+    {"full_name":"maldon","gender":"male","email":"maldon@imkan.com","phone":"+91 8618897671","age":"40","designation":"Examiner-Head","salary":"50000","dob":"23/01/2001"},
+
+    {"full_name":"smith","gender":"male","email":"smith@imkan.com","phone":"+91 8618897671","age":"30","designation":"INstructor-Trainee","salary":"35000","dob":"14/12/2000"},
+    {"full_name":"agasthya","gender":"male","email":"agasthya@imkan.com","phone":"+91 8618897671","age":"20","designation":"Help_desk","salary":"25000","dob":"1/02/1999"},
+    {"full_name":"shivaji","gender":"male","email":"pagecabrera@imkan.com","phone":"+91 8618897671","age":"35","designation":"Dean","salary":"60000","dob":"16/12/1999"},
+
+
+    {"full_name":"rahul","gender":"male","email":"rahul@imkan.com","phone":"+91 8618897671","age":"40","designation":"Deputy Manager","salary":"55000","dob":"16/12/1999"},
+    {"full_name":"thanvi","gender":"female","email":"thanvi@affluex.com","phone":"+91 7531548920","age":"26","designation":"gen secretary","salary":"55000","dob":"15/1/1998"},
+    {"full_name":"aathira","gender":"female","email":"aathira@remold.com","phone":"91 8541026973","age":"31","designation":"manager","salary":"80000","dob":"21/12/1980"},
+    {"full_name":"indrajith","gender":"female","email":"indrajith@geeketron.com","phone":"+91 9574100863","age":"39","designation":"general 70000","salary":"9321","dob":"05/05/1985"},
+    {"full_name":"praveen","gender":"female","email":"praveen@megall.com","phone":"+91 8845963110","age":"21","designation":"HR MANAGER","salary":"74000","dob":"16/11/2000"},
+    {"full_name":"bhanu","gender":"female","email":"bhanu@olucore.com","phone":"+91 9988741250","age":"33","designation":"ACCOUNT manager","salary":"28000","dob":"16/12/1999"},
+    {"full_name":"Christina Dickerson","gender":"female","email":"christinadickerson@halap.com","phone":"+91 8541203997","age":"21","designation":"ChIEF EXEVUTIVE","salary":"7966","dob":"15/05/1997"}
+    
+]}
