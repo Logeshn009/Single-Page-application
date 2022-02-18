@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myapp" ng-controller="myctrl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="spa.js"></script>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="#/home" id="about">Home</a>
+  <a href="#/employee" id="blog">Librarian Details</a>
+    <a href="/spa/index.html" id="about">Feedback</a>
+
+</div>
+ 
+        <div class="col-11">
+            <ng-view></ng-view>
+        </div>
+      </div>
+</body>
+</html>

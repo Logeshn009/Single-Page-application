@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DEESH School EMPLOYEE</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <style type="text/css">
+  
+  
+  h2{
+    font-size:34px; font-weight:500; text-transform:uppercase;
+     text-align: center;
+  }
+
+    
+
+     h2:before {
+  
+ text-align: center;
+    background-color: #c50000;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+}
+   
+    table {
+      font-family: Arial,Univers,sans-serif;
+                 
+                 text-align: center;
+                 align-content: center; 
+                overflow-x:auto;
+                  border: 2px solid rgb(0, 255, 213);
+                  border-collapse: collapse;
+                  
+  
+  display: block;
+  border-radius: 5px;
+  
+  
+}
+.center {
+                      margin-left: auto;
+                     margin-right: auto;
+                     border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+
+                     }
+                     .container{
+                       margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+
+                     }
+                      thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+ thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+th,td{
+                        font-size: 20px ;
+                        padding: 15px;
+                         border-bottom: 1px solid #ffff;
+  text-align: left;
+
+                     }
+
+                     tr:hover {
+                     background-color:#AEFEFF ;
+                     }
+  .form {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .form-item {
+        width: 45%;
+    }
+
+    .form-container {
+        padding: 5em 0;
+    width: 80%;
+  }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="container" ng-app="demoLearningTurn">
+    <div class="content" ng-controller="mainCtrl">
+        <center><p><h2>DEESH School Librarian Details</h2></p></center>
+        <br>
+       
+    
+      <br>Rows To Be Displayed:<br><input type="=number" step="1" min="0" max="5" placeholder="enter no of rows" ng-model="rowlimit"/><br>
+      <br>Search For Library: [fetching from Github]<br><input type="=text" placeholder="search for an employee" ng-model="search"><br><br>
+ 
+      <h3>Librarian List</h3>
+
+      <table class="table">
+        <tr>
+          <td>Full Name<br><br><input type="text" ng-model="search.full_name" placeholder="search by name"></td>
+          <td>Gender<br><br><input type="text" ng-model="search.gender" placeholder="search by gender"></td>
+          <td>Email<br><br><input type="text" ng-model="search.email" placeholder="search by email"></td>
+          <td>Phone<br><br><input type="text" ng-model="search.phone" placeholder="search by phone"></td>
+          <td>Age<br><br><input type="text" ng-model="search.age" placeholder="search by age"></td>
+          <td>Salary<br><br><input type="text" ng-model="search.salary" placeholder="search by salary"></td>
+        </tr>
+
+        <tr ng-repeat="employee in names |orderBy:'full_name'|limitTo:rowlimit|filter:search">
+          <td>{{ employee.full_name|uppercase }}</td>
+          <td>{{ employee.gender }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.phone }}</td>
+          <td>{{ employee.age }}</td>
+          <td>&#8377;{{ employee.salary|number:2 }}</td>
+        </tr>
+
+      </table>
+    <div class="form">
+                <div class="form-item form-item1">
+            <div class="input-control">
+                <label for="nameid">Enter Name of the Current User</label>
+                <input type="text" id="nameid"  ng-model="fullName">
+            </div>
+        </div></div>
+      
+      <p> Edited By :<p>{{ fullName }}</p></p>
+      <p>{{ today | date : "fullDate" }}</p>
+      
+     
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <p> </p><br><br>
+
+</a></p>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+</body>
+
+</html>
